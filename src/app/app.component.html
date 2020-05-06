@@ -2,15 +2,43 @@
     <div class="mt-3">
         <h1>Pipes <small>Angularjs</small></h1>
     </div>
-
+    <hr>
     <div class="row">
         <div class="col">
-            <table>
-                <thead>
-
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Variables</th>
+                        <th>Pipes</th>
+                        <th>Salida</th>
+                    </tr>
                 </thead>
                 <tbody>
-
+                    <tr>
+                        <td>{{ nombre }}</td>
+                        <td> uppercase </td>
+                        <td>{{ nombre | uppercase }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ nombre }}</td>
+                        <td> lowercase </td>
+                        <td>{{ nombre | lowercase }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ nombre }}</td>
+                        <td> slice:3 </td>
+                        <td>{{ nombre | slice:3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ nombre }}</td>
+                        <td> slice:0:3 </td>
+                        <td>{{ nombre | slice:0:3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ arreglo }}</td>
+                        <td> slice:2:5 </td>
+                        <td>{{ arreglo | slice:2:5 }}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

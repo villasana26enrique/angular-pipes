@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+
+  nombre: string;
+  arreglo: number[];
+  decimal: number;
+
+  constructor() {
+    this.nombre = 'Enrique';
+    this.arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    this.decimal = 3.141592653589793238;
+  }
 }
