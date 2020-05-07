@@ -9,11 +9,15 @@ export class AppComponent {
 
   nombre: string;
   arreglo: number[];
-  decimal: number;
+  PI: number;
+  porcentaje: number;
+  salario: number;
 
   constructor() {
     this.nombre = 'Enrique';
     this.arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    this.decimal = 3.141592653589793238;
+    this.PI = Math.PI;
+    this.porcentaje = 0.234;
+    this.salario =  12345;
   }
 }
