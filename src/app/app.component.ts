@@ -15,6 +15,7 @@ export class AppComponent {
   salario: number;
   objeto: any;
   valorPromesa: any;
+  fecha: Date;
 
   constructor() {
     this.nombre = 'Enrique';
@@ -38,5 +39,7 @@ export class AppComponent {
         resolve('Llegó la data');
       }, 4500);
     } );
+
+    this.fecha = new Date();
   }
 }
