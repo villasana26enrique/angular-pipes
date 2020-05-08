@@ -109,6 +109,26 @@
                         <td> date:'MMMM-dd' </td>
                         <td><pre>{{ fecha | date:'MMMM-dd' }}</pre></td>
                     </tr>
+                    <tr>
+                        <td>{{ fecha }}</td>
+                        <td> fecha | date:'MMMM-dd':'':'en' </td>
+                        <td><pre>{{ fecha | date:'MMMM-dd':'':'en' }}</pre></td>
+                    </tr>
+                    <tr>
+                        <td>{{ fecha }}</td>
+                        <td> fecha | date:'MMMM-dd':'':'fr' </td>
+                        <td><pre>{{ fecha | date:'MMMM-dd':'':'fr' }}</pre></td>
+                    </tr>
+                    <tr>
+                        <td>{{ fecha }}</td>
+                        <td> fecha | date:'MMMM-dd':'':{{idioma}}
+                            <br>
+                            <button (click)="idioma='es'" class="mr-1 btn btn-primary">Español</button>
+                            <button (click)="idioma='en'" class="mr-1 btn btn-secondary">Inglés</button>
+                            <button (click)="idioma='fr'" class="mr-1 btn btn-success">Frances</button>
+                        </td>
+                        <td><pre>{{ fecha | date:'MMMM-dd':'':idioma }}</pre></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

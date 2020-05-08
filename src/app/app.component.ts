@@ -16,6 +16,7 @@ export class AppComponent {
   objeto: any;
   valorPromesa: any;
   fecha: Date;
+  idioma: string;
 
   constructor() {
     this.nombre = 'Enrique';
@@ -41,5 +42,6 @@ export class AppComponent {
     } );
 
     this.fecha = new Date();
+    this.idioma = 'es';
   }
 }
