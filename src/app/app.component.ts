@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   nombre: string;
+  nombre2: string;
   arreglo: number[];
   PI: number;
   porcentaje: number;
@@ -17,9 +18,11 @@ export class AppComponent {
   valorPromesa: any;
   fecha: Date;
   idioma: string;
+  videoUrl: string;
+  activar: boolean;
 
   constructor() {
-    this.nombre = 'Enrique';
+    this.nombre = 'Enrique Villasana';
     this.arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     this.PI = Math.PI;
     this.porcentaje = 0.234;
@@ -43,5 +46,8 @@ export class AppComponent {
 
     this.fecha = new Date();
     this.idioma = 'es';
+    this.nombre2 = 'enRIqUe VIlLaSAna';
+    this.videoUrl = 'https://www.youtube.com/embed/3qVPNONdF58';
+    this.activar = true;
   }
 }
